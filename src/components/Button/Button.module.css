@@ -1,0 +1,11 @@
+.root {
+  @apply rounded font-bold py-2 px-4;
+}
+
+.primary {
+  @apply bg-yellow-500 text-black  hover:bg-yellow-600;
+}
+
+.secondary {
+  @apply bg-black text-yellow-500 hover:bg-slate-800;
+}

@@ -1,16 +1,18 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --color-background: #F9FAFB;
+    --dark-color-background: #111827
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+[class="dark"]{
+    --color-background: var(--dark-color-background)
 }
 
-* {
-  box-sizing: border-box;
+@layer base{
+    body{
+        background-color: var(--color-background)
+    }
 }
